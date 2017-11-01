@@ -1,0 +1,28 @@
+div.home {
+  justify-content: center;
+  color: blue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div.projects-container {
+  align-items: center;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.project {
+  display: flex;
+  flex-direction: column;
+  margin: 6em;
+}
+
+div.jungle.project h3 {
+  color: tomato;
+  display: flex;
+  justify-content: center;
+}
