@@ -19,10 +19,15 @@ div.project {
   display: flex;
   flex-direction: column;
   margin: 6em;
+  position: relative;
 }
 
-div.jungle.project h3 {
+div.project h3 {
   color: tomato;
   display: flex;
   justify-content: center;
+}
+
+div.project a.project-button {
+  position: absolute;
 }
