@@ -15,19 +15,30 @@ div.projects-container {
   justify-content: center;
 }
 
+div.projects-container div.project img {
+  height: 265px;
+  width: 430px;
+}
+
 div.project {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 6em;
+  justify-content: center;
+  margin: 2em;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 div.project h3 {
   color: tomato;
-  display: flex;
-  justify-content: center;
 }
 
+
 div.project a.project-button {
+  background: tomato;
+  width: 21%;
+  height: 13%;
   position: absolute;
 }
