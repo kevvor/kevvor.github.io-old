@@ -3,11 +3,26 @@ body {
 }
 
 div.home {
+  font-size: 3em;
+  margin-top: 16%;
+  margin-bottom: 25%;
+  font-family: 'Roboto', sans-serif;
   align-items: center;
-  color: blue;
   display: flex;
   flex-direction: column;
+}
+
+div.home .border {
+  align-items: center;
+  border-bottom: solid;
+  border-top: solid;
+  display: flex;
+  flex-direction: column;
+  height: 5em;
   justify-content: center;
+  width: 15em;
+  border-width: 1px;
+  border-color: grey;
 }
 
 div.projects-container {
@@ -23,8 +38,8 @@ div.projects-container div.project img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 265px;
   width: 430px;
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(80%); /* Chrome 19+ & Safari 6+ */
+  filter: gray;
+  -webkit-filter: grayscale(80%);
 }
 
 div.project {
