@@ -1,29 +1,61 @@
 body {
-  background-color: #FFFAFA;
+  background-color: #ecf0f1;
+  margin: 0;
+  padding: 0;
 }
+
+header nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #000;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+li {
+  list-style: none;
+}
+
+header h2 {
+  color: pink;
+  margin: 0;
+}
+
+a:hover {
+  opacity: 1;
+}
+
 
 div.home {
   font-size: 3em;
-  margin-top: 16%;
-  margin-bottom: 25%;
+  padding-top: 16%;
+  padding-bottom: 25%;
   font-family: 'Roboto', sans-serif;
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: #2980b9;
 }
 
 div.home .border {
   align-items: center;
-  border-bottom: solid;
-  border-top: solid;
   display: flex;
   flex-direction: column;
   height: 5em;
   justify-content: center;
-  width: 15em;
-  border-width: 1px;
-  border-color: grey;
-  margin: 1%;
+  color: white;
+  text-transform: capitalize;
 }
 
 div.projects-container {
@@ -41,14 +73,38 @@ div.projects-container div.project img {
   width: 430px;
   filter: gray;
   -webkit-filter: grayscale(80%);
+  animation: fadein 3s ease-in-out;
 }
 
 div.project {
   align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   margin: 2em;
+}
+
+@keyframes fadein {
+  0% {
+    margin-top: 100%;
+    opacity: 0;
+  }
+
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+
+header.projects-header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  text-transform: capitalize;
+  margin: 1em 0 .75em;
+  font-family: 'Roboto', sans-serif;
 }
 
 div.projects-container div.project img:hover {
@@ -69,3 +125,6 @@ div.project a.project-button button {
   padding: 10px 20px;
 }
 
+button.btn.about {
+  text-transform: capitalize;
+}
