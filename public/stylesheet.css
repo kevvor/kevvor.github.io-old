@@ -45,8 +45,7 @@ div.home {
   align-items: center;
   display: flex;
   flex-direction: column;
-  /*background-color: #2980b9;*/
-  background-image: url('images/home.jp2');
+  background-image: url('images/home.png');
 }
 
 div.home .border {
