@@ -4,10 +4,8 @@ body {
   padding: 0;
 }
 
-header nav {
+nav {
   position: absolute;
-  top: 0;
-  display: flex;
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -15,21 +13,23 @@ header nav {
 
 header a {
   text-decoration: none;
-  opacity: 0.75;
+  opacity: 0.8;
   color: #000;
 }
 
 header nav li {
-  margin: 0 15px;
+  margin: 1.25em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#img-credit {
+  position: absolute;
+  right: 0;
+  margin: 5px 5px 0 0;
 }
 
 li {
   list-style: none;
-}
-
-header h2 {
-  color: pink;
-  margin: 0;
 }
 
 a:hover {
@@ -46,16 +46,17 @@ div.home {
   display: flex;
   flex-direction: column;
   background-color: #2980b9;
+  background-image: url('images/home.jpg');
 }
 
 div.home .border {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   height: 5em;
-  justify-content: center;
   color: white;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.projects-container {
@@ -73,7 +74,7 @@ div.projects-container div.project img {
   width: 430px;
   filter: gray;
   -webkit-filter: grayscale(80%);
-  animation: fadein 3s ease-in-out;
+  /*animation: fadein 3s ease-in-out;*/
 }
 
 div.project {
@@ -127,4 +128,36 @@ div.project a.project-button button {
 
 button.btn.about {
   text-transform: capitalize;
+}
+section.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+section.contact div.contact-text {
+  font-size: 3em;
+  margin: .25em 0 .75em;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.contact div.icons i {
+  margin: 1em 1em;
+  opacity: 0.75;
+  color: #000;
+  text-decoration: none;
+}
+
+section.contact div.icons i:hover {
+  opacity: 1;
+}
+
+footer.footer-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
 }
