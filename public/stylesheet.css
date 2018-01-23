@@ -74,7 +74,7 @@ div.projects-container div.project img {
   width: 430px;
   filter: gray;
   -webkit-filter: grayscale(80%);
-  /*animation: fadein 3s ease-in-out;*/
+  animation: fadein 3s ease-in-out;
 }
 
 div.project {
