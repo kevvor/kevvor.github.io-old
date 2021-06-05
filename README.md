@@ -1,2 +1,1 @@
-My portfolio site!
-Work in progress
+wedding page
